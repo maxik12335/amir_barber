@@ -4,8 +4,20 @@
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Source Sans 3';
+  background-image: url(https://bogatyr.club/uploads/posts/2024-03/1711122978_bogatyr-club-aytp-p-instrumenti-barbera-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+
 ul {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
@@ -13,411 +25,284 @@ ul {
   margin: 0 auto;
 }
 
-body {
-  /* font-family: "News Cycle", sans-serif; */
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
 .header {
-  padding: 20px;
-  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
   position: fixed;
-  left: 0;
-  top: 0;
   width: 100%;
-  background-color: white;
-  z-index: 1;
+  padding: 20px;
+  z-index: 5;
+  background-color: #0000003b;
 }
 
-.logo__title {
-  font-size: 20px;
-  line-height: 20px;
-  font-weight: 600;
-  margin-bottom: 5px;
-}
-
-.logo__subtitle {
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: 400;
-  color: #8d8d8d80;
-}
-
-.about {
-  padding-top: 80px;
-  height: 100vh;
+.nav-list {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.about-title {
-  font-size: 55px;
-  line-height: 60px;
+.nav-list__link {
+  color: white;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+
+.nav-list__link:hover {
+  border-color: white;
+}
+
+.main-page {
+  height: 100vh;
+  padding-top: 62px;
+  display: flex;
+  align-items: center;
+}
+
+.main-page__title {
+  font-size: 70px;
+  margin-bottom: 20px;
   font-weight: 600;
-  margin-bottom: 10px;
+  text-align: center;
 }
 
-.about-subtitle {
-  font-size: 30px;
+.main-page__subtitle {
+  font-size: 35px;
   font-weight: 400;
-  color: #67b4f2;
+  text-align: center;
   margin-bottom: 100px;
 }
 
-.about-description {
-  font-size: 18px;
-  font-weight: 400;
-  color: #8d8d8d80;
-}
-
-.about-img {
-  position: absolute;
-  right: 100px;
-  top: 50%;
-  height: 750px;
-  transform: translateY(-50%);
-}
-
-.about-me {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* background-color: #f267670d; */
-  background: -webkit-linear-gradient(180deg, #ffffff,#f5f5f5,#ffffff);/* Chrome 10-25, Safari 5.1-6 */                          background: linear-gradient(180deg, #ffffff,#f5f5f5,#ffffff);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */                                             
-}
-
-.about-me .container {
-  display: flex;
-  align-items: center;
-}
-
-.about-me-img {
-  height: 450px;
-  margin-right: 50px;
-}
-
-.about-me-title {
-  font-size: 45px;
-  font-weight: 600;
-  margin-bottom: 50px;
-}
-
-.about-me-subtitle {
-  font-size: 25px;
-  font-weight: 400;
-  margin-bottom: 20px;
-  color: #67b4f2;
-}
-
-.about-me-description {
-  color: #8d8d8d80;
-  font-size: 18px;
-}
-
-.reviews {
-  padding-bottom: 100px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.reviews-title {
-  text-align: center;
-  margin-bottom: 50px;
-  font-size: 40px;
-}
-
-.reviews-list {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.reviews-list-item {
-  width: 100%;
-  margin-bottom: 20px;
-  padding: 40px;
+.button {
+  display: block;
+  margin: 0 auto;
   font-size: 20px;
   font-weight: 400;
-  /* box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2); */
+  font-family: 'Source Sans 3';
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.25);
+  border: 1px solid white;
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.65);
+  border-color: transparent;
+}
+
+.button__link {
+  color: white;
+  padding: 10px 20px;
+  display: block;
+}
+
+.portfolio-body {
+  background-repeat: repeat;
+  background-size: contain;
+}
+
+.portfolio {
+  height: auto;
+  align-items: baseline;
+  margin-top: 100px;
+  padding-bottom: 100px;
+}
+
+.portfolio-header {
+  top: 0;
+}
+
+.portfolio-list {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  transition: 0.2s;
-  border-radius: 10px;
-}
-
-.reviews-list-item:hover {
-  background-color: #67b4f2;
-  color: white;
-}
-
-.reviews-list-item:hover .reviews-patient-description {
-  color: white;
-}
-
-.reviews-patient {
-  margin-top: 40px;
-  font-size: 18px;
-  font-weight: 400;
-  margin-bottom: 5px;
-}
-
-.reviews-patient-description {
-  font-size: 15px;
-  line-height: 15px;
-  font-weight: 400;
-  color: #8d8d8d80;
-}
-
-.gallary {
-
-}
-
-.gallary-list {
-  display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
 }
 
-.gallary-list__item {
-  width: 49%;
-  margin-bottom: 20px;
+.portfolio-list__item {
+  width: 30%;
+  margin-bottom: 40px;
 }
 
-.gallary-img {
-  width: 40%;
+.portfolio-list__img {
+  display: block;
+  width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
-  margin-left: 100px;
+  filter: brightness(0.55);
+  transition: 0.2s;
+}
+
+.portfolio-list__img:hover {
+  filter: none;
+}
+
+.price-body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: auto;
+}
+
+.price-header {
+  top: 0;
+}
+
+.price {
+  padding-top: 162px;
+  padding-bottom: 100px;
+  align-items: baseline;
+  height: fit-content;
+}
+
+.price-list {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.price-list__item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background-color: rgba(0, 0, 0, 0.499);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.map-address {
+  font-size: 20px;
 }
 
 .map {
-  display: flex;
-  justify-content: center;
-  padding: 50px 0;
-}
-
-.map iframe {
   width: 100%;
-  height: 500px;
+  height: 300px;
+  outline: none;
   border: none;
-}
-
-.record {
-  padding: 100px 0;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.record-title {
-  text-align: center;
+  filter: grayscale(1);
+  border-radius: 10px;
   margin-bottom: 50px;
-  font-size: 40px;
 }
 
-.record-description {
-  text-align: center;
-  font-size: 18px;
-  font-weight: 400;
+.contacts-description {
+
 }
 
-.record-tel {
-  text-decoration: none;
-  display: block;
-  margin: 0 auto;
-  width: fit-content;
-  margin-top: 100px;
-  box-shadow: 0px 0px 8px 0px rgba(34, 60, 80, 0.2);
-  padding: 10px 20px;
-  border-radius: 5px;
-  background-color: #67b4f2;
-  /* background-color: #f26767; */
-  color: white;
-  transition: 0.3s;
+.contacts-title {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+.contacts-buttons {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 
-.record-tel:hover {
-  background-color: #f26767;
+.contacts-button {
+  margin: 0;
 }
 
-.record-tel span {
-  margin-right: 15px;
-  line-height: 26px;
-  font-size: 16px;
+.contacts-button a {
+  color: white;
+  padding: 10px 20px;
+  display: block;
 }
 
-.record-img {
-  width: 35px;
-  height: 35px;
+.contacts-tg {
+  
 }
 
-.record-tel-2,
-.about-img-mobile {
-  display: none;
+.contacts {
+  padding-top: 162px;
+  padding-bottom: 100px;
+  align-items: baseline;
+  height: fit-content;
 }
 
-.block {
-  display: none;
+.contacts .container {
+  display: flex;
+  justify-content: space-between;
 }
 
-@media (max-width: 1250px) {
+@media (max-width:1240px) {
   .container {
     width: 800px;
   }
 
-  .about-img {
-    right: 0;
-    height: 400px;
+  .portfolio-list__img {
+    filter: brightness(0.7);
   }
 
-  .about-me-img {
-    height: 300px;
+  .price-list {
+    width: 100%;
   }
 
-  .about-me-title {
-    font-size: 30px;
-    margin-bottom: 30px;
+  .price-list__item {
+    font-size: 16px;
   }
 
-  .about-me-subtitle {
-    font-size: 20px;
-    margin-bottom: 15px;
+  .contacts .container {
+    flex-direction: column;
   }
 
-  .about-me-description {
-    font-size: 17px;
+  .map-address {
+    text-align: center;
   }
 
-  .record-description {
-    margin-bottom: 35px;
+  .map-box {
+    margin-bottom: 75px;
   }
 
-  .record-tel-2 {
-    display: flex;
-    margin-top: 30px;
-  }
+  .contacts-description {
+    width: fit-content;
+    margin: 0 auto;
+  }  
 }
 
-@media (max-width: 830px) {
+@media (max-width:840px) {
   .container {
     width: 500px;
   }
 
-  .about-img,
-  .about-me-img {
-    display: none;
+  .main-page__title {
+    font-size: 50px;
   }
 
-  .about {
-    height: fit-content;
-    padding-top: 120px;
-    padding-bottom: 50px;
-    text-align: center;
-  }
-
-  .block {
-    display: block;
-    height: 500px;
-  }
-
-  .about-img-mobile {
-    display: block;
-    height: 500px;
-    /* display: block;
-    position: relative;
-    transform: translateY(0px);
-    margin-bottom: 50px;
-    margin-left: 114px; */
-  }
-
-  .about-subtitle {
+  .main-page__subtitle {
     margin-bottom: 50px;
   }
 
-  .reviews-list-item {
-    width: 100%;
-    font-size: 18px;
-    margin-bottom: 30px;
-    position: relative;
-    color: white;
+  .portfolio-list__item {
+    width: 45%;
   }
 
-  .reviews-patient-description {
-    color: #8d8d8dd1;
-  }
-
-  .reviews-patient {
-    font-weight: 600;
-  }
-
-  .gallary-img {
-    position: absolute;
-    width: 100%;
-    margin: 0;
-    z-index: -1;
-    left: 0;
-    top: 0;
-    filter: brightness(0.5);
+  .price-list__item {
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width:540px) {
   .container {
-    width: 365px;
+    width: 350px;
   }
 
-  .about {
-    text-align: center;
+  .main-page__title {
+    font-size: 35px;
   }
 
-  .about-title {
-    font-size: 40px;
-    line-height: 50px;
-    margin-bottom: 0;
-  }
-
-  .about-subtitle {
+  .main-page__subtitle {
     font-size: 25px;
+    margin-bottom: 75px;
   }
 
-  .about-me-title {
-    font-size: 35px;
-    line-height: 40px;
-    margin-bottom: 50px;
+  .portfolio-list__item {
+    width: 100%;
+    height: 350px;
   }
 
-  .reviews-title {
-    font-size: 30px;
-  }
-
-  .reviews-list-item {
-    font-size: 16px;
-    margin-bottom: 30px;
-    padding: 20px;
-  }
-
-  .record-title {
-    font-size: 35px;
-  }
-
-  .block {
-    display: block;
-    height: 500px;
-  }
-
-  .about-img-mobile {
-    height: 500px;
-    top: 54%;
+  .contacts-title {
+    text-align: center;
   }
 }
